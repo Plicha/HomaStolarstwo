@@ -1,0 +1,104 @@
+.Nav{
+    color: #000;
+    font: 2.5vh 'Krub', sans-serif;
+    font-weight: 600;
+    -webkit-animation: fadeIn 300ms;
+    animation: fadeIn 300ms; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 2vh 5vw;
+    padding: 0;
+  }
+  li {
+    font:0.9em'Krub', sans-serif;
+    font-weight: 600;
+    float: right;
+    border-bottom: solid 2px #ccc;
+    margin-right:10px;
+  }
+  li:hover{
+    transition: 500ms;
+    border-bottom: solid 2px #000;  
+  }
+  
+  li a {
+    
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1vh;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    transition: 500ms;
+    background-color: #f1f1f1
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .burger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0 0 5px ;
+  }
+  .burger{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 2vw;
+    top: 2vh;
+    opacity: 0;
+    width: 45px;
+    padding: 2%;
+  }
+  .burger:hover{
+    background: #ddd;
+  }
+  .mobileNav{opacity: 0;}
+  
+
+@media only screen  and (max-width: 999px) {
+  .Nav li{ display: none }
+  .mobileNav{
+    position: absolute;
+    background: #fff;
+    z-index: 9;
+    top: 5vh;
+    padding: 5%;
+    border-bottom: 2px solid #ccc;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms; 
+  }
+  .mobileNav{display: list-item;width: 80%}
+  .mobileNav li{
+    width: 100%;
+  }
+  .mobileNav li{
+    text-align: center;
+  }
+  .mobileNav a{
+    width: 80%; 
+  }
+  .mobileNav :hover{
+    background: #ccc;
+  }
+  .burger{ opacity:1; display: inline }
+}

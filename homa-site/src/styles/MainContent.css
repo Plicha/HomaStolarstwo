@@ -1,0 +1,25 @@
+.MainContent{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.logo{
+    margin: 5vh 0 0 5vw;
+    color: #000;
+    font: 5vh 'Krub', sans-serif;
+    font-weight: 700;
+    width:15vw;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:770px) and (max-width: 999px) {
+    .logo{ margin: 1vh 0 0 5vw; }
+}
+@media only screen and (max-width: 770px) {
+    .logo{ margin: 1vh 0 0 5vw; }
+}

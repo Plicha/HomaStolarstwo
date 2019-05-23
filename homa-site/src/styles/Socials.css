@@ -1,0 +1,15 @@
+.socials{ 
+    position: absolute; 
+    right: 0; 
+    bottom: 8vh;
+    height: auto;  
+}
+.socials img{
+    background: #222;
+    height: 4vh;
+    width: auto;
+    padding: 1vh;
+}
+.socials img:hover{
+    background: #444;
+}

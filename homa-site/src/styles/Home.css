@@ -1,0 +1,164 @@
+.home{
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms; 
+}
+.hexagonArea{
+    margin: 0;
+}
+.hexagonArea:hover{ 
+    -webkit-animation: fadeIn 300ms;
+    animation: fadeIn 300ms; }
+.hexagonTop,.hexagonBot{
+    width: 0;
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+}
+.hexagonTop{ border-bottom: 30px solid #c0d6e2; }
+.hexagonBot{ border-top: 30px solid #c0d6e2; }
+.hexagonMid{
+    width: 20vw;
+    height: 22vh;
+    background-color: #c0d6e2;
+    position: relative;
+    overflow: hidden;
+}
+.bigLogo{
+    color: #222222;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigLogo li{
+    position: relative;
+    float: left;
+    font-size: 16vh;
+    border: 0;
+    height: 46vh;    
+}
+.bigLogo h1{ margin:0;}
+
+.home p{
+    position: absolute;
+    display: inline;
+    width: 40vw;
+    right: 0;
+    font-size: 6vh;
+}
+
+.hexagonMid img{
+    height: auto;
+    width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.2));
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.2));
+}
+.saw{
+    position: absolute;
+    height: 60%;
+    width: auto;
+    margin-top: 2.5vh;
+    -webkit-animation:spin 6s linear infinite;
+    -moz-animation:spin 6s linear infinite;
+    animation:spin 6s linear infinite;
+}
+/* TemoporaryModal */
+.temporaryModal {
+    display: ''; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modalCon {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modalCon p{
+      position: unset;
+      text-align: center;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media only screen and (min-width:770px) and (max-width: 1050px) {
+    .hexagonArea{
+        margin-top: 5%;
+    }
+    .hexagonMid img{
+        display: block;
+        margin: auto;
+        height: 70%;
+        width: auto;
+    }
+    .bigLogo h1{
+
+        font-size: 25vh;
+    }
+    .home p{
+        display: block;
+        width: 45vw;
+        right: 32vw;
+        bottom: 15vh;
+        font-size: 5vh;
+    }
+    .bigLogo h1{
+        font-size: 18vh;
+    }  
+}
+@media only screen and (max-width: 770px) {
+    .hexagonArea{
+        margin-top: 5%;
+    }
+    .hexagonMid{
+        width: 20vw;
+        height: 6vh;
+    }
+
+    .hexagonMid img{
+        display: block;
+        margin: auto;
+        height: 80%;
+        width: auto;
+    }
+    .bigLogo h1{
+        font-size: 12vh;
+    }    
+    .home p{
+        /* display: block;
+        width: 45vw;
+        right: 28vw;*/
+        bottom: 45vh; 
+        width: 100%;
+        text-align: center;
+        font-size: 5vh;
+    }
+    .modalCon p{
+        width: 80vw;
+        position: unset;
+        text-align: center;
+    }
+}
+

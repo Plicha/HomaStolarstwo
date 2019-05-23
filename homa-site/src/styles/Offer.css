@@ -1,0 +1,106 @@
+.offer{
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms; 
+    margin-top: 5%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+.offerIcon{
+    display:flex;
+    justify-content: center;
+    background-image: radial-gradient(#fff, #f8f8f8);
+    margin: 0.5vw;
+    height: 32vw;
+    width: 32vw;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.offerIcon img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.offerIcon:hover{  
+    opacity: 1;
+    background-image: radial-gradient( #f7f7f7, #fff);
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms; 
+}
+.offerIcon h3{
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    font: 3.2vw 'Krub', sans-serif;
+    font-weight: 400;
+    color: #222;
+}
+/* .offer svg{
+    height: 40vh;
+    padding: 2%;
+    border-radius: 5%;
+    margin: 8% 5% 0 5%;
+    cursor: pointer;
+}
+.offer svg:hover{
+    -webkit-animation: fadeIn 200ms;
+    animation: fadeIn 200ms;
+    color: #333;
+}
+.svgSection , .link {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    color: #ccc;
+    fill: currentColor;
+}
+.svgSection a{
+    display: inline-block;
+    text-decoration: none;
+}
+.svgSection svg path{
+    stroke-width:1;  
+}
+.vl {
+    border-left: 0.2vw solid #f5f4f4;
+    border-radius: 1vw;
+    height: 75vh;
+    margin: 0 5% 0 5%;
+}
+.tittles{
+    display: flex;
+    justify-content: center;
+}
+.offer h1{
+    font: 2.5vh 'Krub', sans-serif;
+    font-weight: 400;
+    margin: 5% 16% -15% 19%;
+    font-size: 5vh;
+    display: inline-block;
+    color: #222;
+} */
+
+@media only screen and (max-width: 1050px){
+    .offer{
+        grid-template-columns: auto;
+    }
+    .offerIcon{
+        height: 36vw;
+        width: 36vw;
+    }
+    .offerIcon h3{
+        font: 5.5vw 'Krub', sans-serif;
+    }
+}
+@media only screen and (max-height: 850px) and (max-width: 700px)  {
+    .offerIcon{
+        height: 51vw;
+        width: 51vw;
+    }
+}
+@media only screen and (max-width: 415px)  {
+    .offerIcon{
+        height: 45vw;
+        width: 45vw;
+    }
+}
